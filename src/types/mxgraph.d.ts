@@ -59,6 +59,14 @@ declare module "mxgraph" {
     public source: mxCell | null;
     public target: mxCell | null;
     public geometry: mxGeometry;
+    // Custom
+    public moduleName: any;
+    public class: any;
+    public type: any;
+    public variantQuantity: any;
+    public hasVariant: any;
+    public mapperEvents: any;
+
 
     constructor(value?: any, geometry?: mxGeometry, style?: string);
 

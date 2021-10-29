@@ -68,6 +68,31 @@ export class Deserializer {
       cell.setStyle(Deserializer.deserializeStyle(cellData.style));
     }
 
+    // Custom
+    if (cellData.moduleName !== undefined) {
+      cell.moduleName = cellData.moduleName
+    }
+
+    if (cellData.type !== undefined) {
+        cell.type = cellData.type
+    }
+
+    if (cellData.class !== undefined) {
+        cell.class = cellData.class
+    }
+
+    if (cellData.variantQuantity !== undefined) {
+        cell.variantQuantity = cellData.variantQuantity
+    }
+
+    if (cellData.hasVariant !== undefined) {
+        cell.hasVariant = cellData.hasVariant
+    }
+    
+    if (cellData.mapperEvents !== undefined) {
+        cell.mapperEvents = cellData.mapperEvents
+    }
+
     return cell;
   }
 

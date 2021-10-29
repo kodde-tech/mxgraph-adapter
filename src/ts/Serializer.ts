@@ -68,6 +68,31 @@ export class Serializer {
       result.target = cell.target.id;
     }
 
+    // Custom
+    if (cell.moduleName) {
+      result.moduleName = cell.moduleName
+    }
+
+    if (cell.class) {
+        result.class = cell.class
+    }
+
+    if (cell.type) {
+        result.type = cell.type
+    }
+
+    if (cell.variantQuantity) {
+        result.variantQuantity = cell.variantQuantity
+    }
+
+    if (cell.hasVariant) {
+        result.hasVariant = cell.hasVariant
+    }
+    
+    if (cell.mapperEvents) {
+        result.mapperEvents = cell.mapperEvents
+    }
+
     return result;
   }
 

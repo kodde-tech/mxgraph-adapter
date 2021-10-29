@@ -16,6 +16,14 @@ export interface ICellData {
   parent?: string;
   source?: string;
   target?: string;
+  
+  //Modeler
+  moduleName?: string;
+  class?: string;
+  type?: string;
+  variantQuantity?: number;
+  hasVariant?: boolean;
+  mapperEvents?: any;
 }
 
 export interface IPoint {
