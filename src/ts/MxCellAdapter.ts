@@ -88,7 +88,7 @@ export class MxCellAdapter {
   }
 
   private _localValueChanged(change: mxValueChange): void {
-    const {value} = change;
+    const {value = ''} = change;
     this._rtCell.set("value", value);
     this._eventCallback("onCellChanged", {cell: this._mxCell});
   }
