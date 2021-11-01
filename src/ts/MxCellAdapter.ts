@@ -123,7 +123,7 @@ export class MxCellAdapter {
   }
 
   private _diffStyles(newStyles: any, oldStyles: any): IStyleDiffs {
-    const addedClasses = newStyles.classes.filter((c: string) => oldStyles.classes.indexOf(c) >= 0);
+    const addedClasses = newStyles.classes.filter((c: string) => oldStyles.classes.indexOf(c) < 0);
     const removedClasses = oldStyles.classes.filter((c: string) => newStyles.classes.indexOf(c) < 0);
 
     const changedStyles: any = {};
