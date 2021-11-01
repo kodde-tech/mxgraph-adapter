@@ -16,7 +16,7 @@ export interface ICellData {
   parent?: string;
   source?: string;
   target?: string;
-  
+
   //Modeler
   moduleName?: string;
   class?: string;
@@ -24,6 +24,7 @@ export interface ICellData {
   variantQuantity?: number;
   hasVariant?: boolean;
   mapperEvents?: any;
+  flowType?: string;
 }
 
 export interface IPoint {

@@ -88,9 +88,13 @@ export class Deserializer {
     if (cellData.hasVariant !== undefined) {
         cell.hasVariant = cellData.hasVariant
     }
-    
+
     if (cellData.mapperEvents !== undefined) {
         cell.mapperEvents = cellData.mapperEvents
+    }
+
+    if (cellData.flowType) {
+      cell.flowType = cellData.flowType;
     }
 
     return cell;

@@ -66,7 +66,7 @@ declare module "mxgraph" {
     public variantQuantity: any;
     public hasVariant: any;
     public mapperEvents: any;
-
+    public flowType: string;
 
     constructor(value?: any, geometry?: mxGeometry, style?: string);
 

@@ -88,9 +88,13 @@ export class Serializer {
     if (cell.hasVariant) {
         result.hasVariant = cell.hasVariant
     }
-    
+
     if (cell.mapperEvents) {
         result.mapperEvents = cell.mapperEvents
+    }
+
+    if (cell.flowType) {
+      result.flowType = cell.flowType;
     }
 
     return result;
