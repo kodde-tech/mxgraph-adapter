@@ -26,6 +26,8 @@ declare module "mxgraph" {
     public addMouseListener(listener: any): void;
 
     public getSelectionCells(): mxCell[];
+
+    public refresh(): void;
   }
 
   export class mxGraphView extends mxEventSource {

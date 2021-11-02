@@ -210,7 +210,9 @@ export class MxCellAdapter {
           this._initStyle();
           const newStyle = Deserializer.deserializeStyle(this._rtStyle.value() as IStyleData);
           this._mxCell.setStyle(newStyle);
-          this._mxGraph.view.refresh();
+          // this._mxGraph.view.refresh();
+          // TODO why refresh only works on graph ?
+          this._mxGraph.refresh();
           this._eventCallback("onCellChanged", {cell: this._mxCell});
           break;
         case "value":
